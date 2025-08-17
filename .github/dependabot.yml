@@ -26,3 +26,23 @@ updates:
       interval: "weekly"
       day: "saturday"
       time: "06:00"
+
+  - package-ecosystem: docker
+    directory: /.devcontainer
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /Bootcamp.API/Api
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /Bootcamp.API/Test
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /Bootcamp.EF/src
+    schedule:
+      interval: daily
